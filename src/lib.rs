@@ -23,7 +23,7 @@ fn impl_enum_to_str(name: &syn::Ident, body: Vec<syn::Variant>) -> quote::Tokens
     let content = build_content(name, body);
     quote!(
         impl #name{
-            fn enum_to_str(&self)->&'static str{
+            fn enum_to_str(&self) -> &'static [u8] {
                 match *self{
                     #content
                 }
@@ -34,7 +34,7 @@ fn impl_enum_to_str(name: &syn::Ident, body: Vec<syn::Variant>) -> quote::Tokens
 
 fn build_content(name: &syn::Ident, body: Vec<syn::Variant>) -> syn::Ident {
     body.iter()
-        .map(|field| format!("{enum_name}::{field} => \"{field}\"",
+        .map(|field| format!("{enum_name}::{field} => b\"{field}\0\"",
                              field = field.ident,
                              enum_name = name))
         .collect::<Vec<String>>()
