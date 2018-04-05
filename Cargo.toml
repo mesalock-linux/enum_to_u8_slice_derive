@@ -1,9 +1,9 @@
 [package]
-name = "enum_to_str_derive"
+name = "enum_to_u8_slice_derive"
 version = "0.1.0"
-authors = ["DCjanus <1102035688@qq.com>"]
-description = "provide a simple way to convert enum to static str ref"
-repository = "https://github.com/DCjanus/enum_to_str_derive"
+authors = ["Yiming Jing (jingyiming@baidu.com)"]
+description = "provide a simple way to convert enum to u8 slice ref"
+repository = "https://github.com/kevinis/enum_to_u8_slice_derive"
 license = "BSD-3-Clause"
 
 [dependencies]
