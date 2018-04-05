@@ -1,6 +1,6 @@
 [package]
 name = "enum_to_u8_slice_derive"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Yiming Jing <jingyiming@baidu.com>"]
 description = "A simple fork of enum_to_str_derive (by @DCjanus), convert enum to u8 slice ref"
 repository = "https://github.com/mesalock-linux/enum_to_u8_slice_derive"
