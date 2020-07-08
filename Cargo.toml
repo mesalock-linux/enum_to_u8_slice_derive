@@ -1,14 +1,15 @@
 [package]
 name = "enum_to_u8_slice_derive"
-version = "0.1.1"
-authors = ["Yiming Jing <jingyiming@baidu.com>"]
+version = "0.2.0"
+authors = ["Yiming Jing <jingyiming@baidu.com>", "Yu Ding <dingelish@gmail.com>"]
 description = "A simple fork of enum_to_str_derive (by @DCjanus), convert enum to u8 slice ref"
 repository = "https://github.com/mesalock-linux/enum_to_u8_slice_derive"
 license = "BSD-3-Clause"
 
 [dependencies]
-syn = "0.11.11"
-quote = "0.3.15"
+syn = "1.0"
+quote = "1.0"
+proc-macro2 = "1.0"
 
 [lib]
 proc-macro = true
